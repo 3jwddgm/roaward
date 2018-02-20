@@ -1,0 +1,18 @@
+{
+  "presets": ["next/babel"],
+  "plugins": [
+    "transform-decorators-legacy",
+    [
+      "module-resolver",
+      {
+        "root": ["./"],
+        "alias": {
+          "components": "./components",
+          "decorators": "./core/decorators",
+          "theme": "./core/theme",
+          "services": "./core/services"
+        }
+      }
+    ]
+  ]
+}
